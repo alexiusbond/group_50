@@ -104,7 +104,7 @@ sql_to_create_employees_table = '''
 CREATE TABLE employees (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     full_name VARCHAR(200) NOT NULL,
-    salary FLOAT DEFAULT 0.0,
+    salary FLOAT(10, 2) DEFAULT 0.0,
     hobby TEXT DEFAULT NULL,
     birth_date DATE NOT NULL,
     is_married BOOLEAN DEFAULT FALSE
